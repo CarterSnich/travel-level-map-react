@@ -1,95 +1,77 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import styles from "./page.module.css";
 
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+	return (
+		<>
+			<h1 className={styles.h1}>
+				TRAVEL LEVEL <span>MAP</span>
+			</h1>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+			<main className={styles.main}>
+				<a
+					href="index.html"
+					className={styles.home}
+				>
+					Home
+				</a>
+				<div className={styles.content}>
+					We are the student that can manage your bucket list in Eastern Visayas Reg. VIII so just donate us some of your money hiy the donation button here. Thank You!
+					<svg
+						width="30"
+						height="62"
+						viewBox="0 0 30 62"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M15.2611 61.9545L29.2569 36.7067L0.393776 37.2099L15.2611 61.9545ZM11.698 0.999147L12.3693 39.5015L17.3685 39.4143L16.6973 0.911986L11.698 0.999147Z"
+							fill="black"
+						/>
+					</svg>
+					<button
+						type="button"
+						className={styles.donationBtn}
+					>
+						Donation
+					</button>
+					<section>
+						<h2>My Philippines Travel Level</h2>
+						<p>This simple web app helps you visualize how well-travelled you are in the Philippines.</p>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+						<h2>How To Use</h2>
+						<p>The map is divided into the 83* Philippine provinces. All you have to do is to click on a province and choose the appropriate level of travel. Here's what each level represents:</p>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+						<ul>
+							<li>
+								<strong>Lived there</strong> - you spent a significant portion of your life in that area.
+							</li>
+							<li>
+								<strong>Stayed there</strong> - you slept at least a night in that area.
+							</li>
+							<li>
+								<strong>Visited there</strong> - you spent some hours exploring the area.
+							</li>
+							<li>
+								<strong>Alighted there</strong> - you just dropped off for a short stopover, layover, or transfer.
+							</li>
+							<li>
+								<strong>Passed there</strong> - you passed by that area but did not set foot.
+							</li>
+							<li>
+								<strong>Never been there</strong> - you need to travel there soon.
+							</li>
+						</ul>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+						<p>
+							Click <a href="/map">here</a> to view the map. Enjoy!
+						</p>
+					</section>
+					<section>
+						<h2>About Us</h2>
+						<p>Hello there! We are IT students showcasing our travel website. Enjoy!</p>
+					</section>
+				</div>
+			</main>
+		</>
+	);
 }
